@@ -45,6 +45,7 @@ export default class extends Component {
         autoplayTimeout={4}
         height={240}
         onTouchStart={(e, state, context) => this.setState({ touched: true })}
+        activeDotColor={'red'}
       >
         {
           this.state.sliderImages.map((item, i) => <Slider
