@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, StatusBar } from 'react-native';
 
 import List from './components/List';
 import Slider from './components/Slider';
@@ -20,6 +20,10 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.outerView}>
+        <StatusBar
+          backgroundColor="#000"
+          barStyle="light-content"
+        />
         <Header />
         <View style={styles.innerView}>
           <Slider />
